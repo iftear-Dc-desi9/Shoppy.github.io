@@ -1,0 +1,41 @@
+* {
+    margin:0;
+    padding:0;
+   
+    box-sizing: border-box;
+   }
+   .contact-bg{
+    background-image: url(https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    min-height: 250px;
+    /*
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    
+    background-color: black;*/
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    
+    
+    }
+.foter{
+    background: black;
+    color:rgb(255, 255, 255);
+}
+
+.fo-link{
+    color:white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 680px) {
+    .fo-link{
+        font-size: 15px;
+    } 
+}
+
+

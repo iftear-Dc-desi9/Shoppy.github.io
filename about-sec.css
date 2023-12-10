@@ -1,0 +1,100 @@
+* {
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+   }
+   .about-bg{
+    background-image: url(https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    min-height: 250px;
+    /*
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    
+    background-color: black;*/
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    
+    
+    }
+ .about-collapsible{
+     border:none;
+     padding:6px;
+     background: rgba(0, 0, 0, 0.274);
+     color:white;
+     cursor:pointer;
+     outline:none;
+     width:100%;
+     text-align: left;
+ }  
+.active-about,.about-collapsible:hover{
+    background: rgb(151, 139, 139);
+    color:rgb(248, 172, 8);
+}
+.about-content{
+    padding:0 18px;
+    max-height: 0;
+    font-family: 'Robota', sans-serif;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    
+}
+.social-link {
+    text-align: center;
+}
+
+.so-icon, .so-icon-item {
+    list-style: none;
+    display:inline-block;
+    letter-spacing: 7px;
+    padding-bottom: 30px;
+}
+ .so-icon-item:hover{
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    opacity: 0.70;
+} 
+
+/*contact*/
+#subscribe {
+    width:50%;
+    margin:auto;
+}
+#mail-us {
+    width:50%;
+    margin:auto;
+}
+.send-butn {
+    width:100%;
+    padding:8px;
+    border:none;
+    background:black;
+    color:white;
+    opacity:1;
+}
+.send-butn:hover {
+    opacity:0.80;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .so-icon, .so-icon-item {
+        letter-spacing: 4px;
+       
+    }
+    #subscribe {
+        width:90%;
+    }
+    #mail-us {
+        width:85%;
+    }
+    .about-collapsible{
+        padding: 4px;
+        font-size: 15px;
+    }
+}

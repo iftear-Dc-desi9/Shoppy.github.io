@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppy | Products</title>
+    <link rel="stylesheet" href="shopping-web.css">
+    <!--<link rel="stylesheet" href="product-sec.css">-->
+    <link rel="stylesheet" href="item-product.css">
+    <link rel="stylesheet" href="about-sec.css">
+    <link rel="stylesheet" href="contact-sec.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav class = "navbar navbar-expand-md  navbar-dark sticky-top" >
+        <a class="navbar-brand " href="#"id="logo" >Shopper</a>
+      <button class="navbar-toggler"type="button"data-toggle="collapse"data-target="#collapseNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class ="collapse navbar-collapse nav justify-content-center" id="collapseNavbar">
+          <ul class=" navbar-nav ">
+            <li class="nav-item"><a href="index.html"class="nav-link">Home</a></li>
+              <li class="nav-item dropdown">
+                  <a href="#"class="nav-link dropdown-toggle"data-toggle="dropdown">PRODUCTS</a>
+              <div class=" dropdown-menu dropdown-menu1">
+              <a href="#it-jeans" class="dropdown-item dropdown-item1">Jeans</a>
+              <a href="#it-tshirt" class="dropdown-item dropdown-item1">T-shirts</a>
+              <a href="#it-shirt" class="dropdown-item dropdown-item1">Shirts</a>
+              <a href="#it-jacket" class="dropdown-item dropdown-item1">Jackets</a>
+              <a href="#it-sweater" class="dropdown-item dropdown-item1">Sweater</a>
+              <a href="#it-watch" class="dropdown-item dropdown-item1">Watches</a>
+              <a href="#it-sunglass" class="dropdown-item dropdown-item1">sunglasses</a>
+              <a href="#it-shoe" class="dropdown-item dropdown-item1 ">Shoes</a>
+              </div>
+              </li>
+              <li class="nav-item"><a href="about.html"class="nav-link">About</a></li>
+              <li class="nav-item"><a href="team.html"class="nav-link">Team</a></li>
+              <li class="nav-item"><a href="contact.html"class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="user-info.html"class="nav-link">LOG-IN</a></li>           
+              
+          </ul>
+      
+      </nav>
+
+    
+    <header class="item-product-bg">
+        <div class="flex-container-1">
+            <div class="item-intro-content">
+                <h1 id="it-cart">Festival offer</h1>
+                <p>Save Upto <span>50%</span></p>
+                </div>
+                <div class="flex-search-cart wior">
+                    <span class="wish" data-toggle="modal" data-target="#demo2"><i class='fa fa-shopping-cart'
+                            id="cart"></i> </span>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+        <div class="container">
+
+            <!-- Button to Open the Modal -->
+            <!-- The Modal -->
+            <div class="modal" id="demo2">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h3 class="modal-title">Cart</h3>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+
+                        <!-- Modal body-->
+                        <div class="modal-body" id="shop-cart">
+                            <section class="container content-section">
+                                <div class="cart-row">
+                                    <div class="cart-item cart-header cart-column">ITEM</div>
+                                    <div class="cart-price cart-header cart-column">PRICE</div>
+                                    <div class="cart-quantity cart-header cart-column">QUANTITY</div>
+                                </div>
+                                <div class="cart-items">
+
+                                </div>
+                                <div class="cart-total">
+                                    <strong class="cart-total-title">Total</strong>
+                                    <span class="cart-total-price">$0.0</span>
+                                </div>
+                                <br>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1"
+                                        onclick="itemClicked()" name="example1">
+                                    <label class="custom-control-label" for="customCheck1">Pant</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                        onclick="itemClicked()" name="example1">
+                                    <label class="custom-control-label" for="customCheck2">Shirts</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3"
+                                        onclick="itemClicked()" name="example1">
+                                    <label class="custom-control-label" for="customCheck3">T-shirts</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck4"
+                                        onclick="itemClicked()" name="example1">
+                                    <label class="custom-control-label" for="customCheck4">Jackets</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck5"
+                                        onclick="itemClicked()" name="example1">
+                                    <label class="custom-control-label" for="customCheck5">Sweater</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck6"
+                                        name="example1">
+                                    <label class="custom-control-label" for="customCheck6">Watches</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck7"
+                                        name="example1">
+                                    <label class="custom-control-label" for="customCheck7">sunglasses</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck8"
+                                        onclick="itemClicked()" name="example1">
+                                    <label class="custom-control-label" for="customCheck8">Shoes</label>
+                                </div>
+
+                                <div>
+                                    <br>
+                                    <div class="container">
+                                        <div class="row">
+                                            <!--sizes-->
+                                            <div class="col-4 pro-sizes1">
+                                                <p>Waist Size: </p>
+                                                <form class=" size-select" style="margin-left:5px;">
+                                                    <select class="custom-select" name="size">
+                                                        <option value="28">28</option>
+                                                        <option value="30">30</option>
+                                                        <option value="32">32</option>
+                                                        <option value="34">34</option>
+                                                        <option value="36">36</option>
+                                                    </select>
+                                                </form>
+                                                <br>
+                                            </div>
+                                            <div class="col-4 pro-sizes2">
+                                                <p>T-shirt Size: </p>
+                                                <form class=" size-select" style="margin-left:5px;">
+                                                    <select class="custom-select" name="size">
+                                                        <option value="28">S</option>
+                                                        <option value="30">M</option>
+                                                        <option value="32">L</option>
+                                                        <option value="34">XL</option>
+                                                        <option value="36">XXL</option>
+                                                    </select>
+                                                </form>
+                                                <br>
+                                            </div>
+                                            <div class="col-4 pro-sizes3">
+                                                <p>Shirt Size: </p>
+                                                <form class=" size-select" style="margin-left:5px;">
+                                                    <select class="custom-select" name="size">
+                                                        <option value="28">S</option>
+                                                        <option value="30">M</option>
+                                                        <option value="32">L</option>
+                                                        <option value="34">XL</option>
+                                                        <option value="36">XXL</option>
+                                                    </select>
+                                                </form>
+                                                <br>
+                                            </div>
+                                            <div class="col-4 pro-sizes4">
+                                                <p>Jacket Size: </p>
+                                                <form class=" size-select" style="margin-left:5px;">
+                                                    <select class="custom-select" name="size">
+                                                        <option value="28">S</option>
+                                                        <option value="30">M</option>
+                                                        <option value="32">L</option>
+                                                        <option value="34">XL</option>
+                                                        <option value="36">XXL</option>
+                                                    </select>
+                                                </form>
+                                                <br>
+                                            </div>
+                                            <div class="col-4 pro-sizes5">
+                                                <p>Sweater Size: </p>
+                                                <form class=" size-select" style="margin-left:5px;">
+                                                    <select class="custom-select" name="size">
+                                                        <option value="28">S</option>
+                                                        <option value="30">M</option>
+                                                        <option value="32">L</option>
+                                                        <option value="34">XL</option>
+                                                        <option value="36">XXL</option>
+                                                    </select>
+                                                </form>
+                                                <br>
+                                            </div>
+                                            <div class="col-4 pro-sizes6">
+                                                <p>Shoe Size: </p>
+                                                <form class=" size-select" style="margin-left:5px;">
+                                                    <select class="custom-select" name="size">
+
+                                                        <option value="28">6</option>
+                                                        <option value="30">7</option>
+                                                        <option value="32">8</option>
+                                                        <option value="34">9</option>
+                                                        <option value="36">10</option>
+                                                    </select>
+                                                </form>
+                                            </div>
+                                            <!--sizes end-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                                <!-- Modal body content end-->
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--cart end-->
+    </header>
+    <div class="space"></div>
+    <!--product Section start-->
+    <section id="search" class='item-content'>
+        <br>
+        <div class="container-fluid">
+            <h3 id="ttle1"> Jeans </h3>
+            <br>
+            <!--1st product jeans start-->
+            <div class="row" id="pro">
+                <div class="col-md-3" id="it-jeans">
+                    <div class="product-items">
+                        <Span class="product-item-title">Skinny fit jeans</Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/1082529/pexels-photo-1082529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Cropped jeans</Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/603022/pexels-photo-603022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Slim fit jeans</Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/4109755/pexels-photo-4109755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Ripped jeans</Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/65676/nanjing-studio-jeans-65676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$13.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--1st product jeans end-->
+            <br>
+            <!--2nd product jeans start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Stretch jeans</Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/4210860/pexels-photo-4210860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$13.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Traperd jeans</Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/1235692/pexels-photo-1235692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Classic jeans</Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/2129970/pexels-photo-2129970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Carrot fit Jeans </Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/533733/pexels-photo-533733.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$17.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--2nd product jeans end-->
+            <br>
+            <!--3rd product jeans start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Narrow jeans</Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/1804075/pexels-photo-1804075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Straight jeans</Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/981619/pexels-photo-981619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Regular fit Jeans</Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/936023/pexels-photo-936023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Athletic Jeans </Span>
+
+                        <img class="product-item-image"
+                            src="https://images.pexels.com/photos/1082528/pexels-photo-1082528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$17.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--3rd product jeans end-->
+            <div class="space"></div>
+            <h3 id="ttle2">T-Shirt</h3>
+            <br>
+            <!--1st product Tshirt start-->
+            <div class="row">
+                <div class="col-md-3" id="it-tshirt">
+                    <div class="product-items">
+                        <Span class="product-item-title">Basic half sleeve T-shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2221361/2017/11/23/11511442867129-Moda-Rapido-Men-Maroon--Black-Colourblocked-Round-Neck-T-shirt-9381511442867006-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Long sleeve Crew neck T-shirts</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8708745/2019/5/13/1bd3e9a2-a2cc-40ab-a66d-1963afaf26501557720471521-HRX-by-Hrithik-Roshan-Men-Tshirts-3871557720470479-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">V-neck T-shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2465197/2018/6/22/8b008911-01b4-4cdd-8d4c-bdf0becb7c061529648580441-US-Polo-Assn-Men-Lounge-Tshirts-801529648579674-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Polo collar T-shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10941054/2020/2/13/8ba3145b-c652-448d-9193-9c9ef32df8cf1581569352908-Roadster-Men-Navy-Blue--White-Printed-Polo-Collar-T-shirt-27-3.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$13.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--1st product t-shirt end-->
+            <br>
+            <!--2nd product Tshirt start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Ringer T–shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11077774/2019/12/24/29bdd2c8-3e2f-43aa-8ce5-55f3a501a4fa1577166621272-Difference-of-Opinion-Men-Sea-Green-Solid-Round-Neck-T-shirt-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Cap sleeve T-shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/10/11/5675756b-b4ab-4746-b3ea-7dc85659c5e61602370095201-3.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Pocket T-shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11165364/2020/9/7/9147ef29-e1ae-4d1d-accb-4ce3b25b6d671599471102212etherMenOliveGreenRegularFitSolidCasualN9puresilverCordruoyS1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Printed T-Shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700951/2020/1/22/8a8c51db-862a-4c99-bbac-511d5ff3bf261579693016186-HRX-by-Hrithik-Roshan-Men-Black-Printed-T-shirt-815796930137-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$13.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--2nd product t-shirt end-->
+            <br>
+            <!--3rd product Tshirt start-->
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Henley collar T-shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10016993/2019/6/20/3c6c5892-f0bd-4a5f-8f34-e18c7a83c43e1561014168676-Campus-Sutra-Men-Green-Dyed-Henley-Neck-T-shirt-511156101416-3.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Half Tshirt (Singlet)</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11669864/2020/10/19/7f9a152b-a3de-4e7e-a9be-6114308b6d761603092800288-Reebok-Men-Innerwear-Vests-6261603092798572-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$13.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--3rd product t-shirt end-->
+            <br>
+            <h3 id="ttle3">Shirt</h3>
+            <br>
+            <!--1st product shirt start-->
+            <div class="row">
+                <div class="col-md-3" id="it-shirt">
+                    <div class="product-items">
+                        <Span class="product-item-title">Aloha Shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2414313/2018/3/13/11520926368495-HERENOW-Men-Red--Black-Regular-Fit-Checked-Casual-Shirt-8881520926368447-3.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Camp Shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11014978/2019/11/28/d4aa6333-d03e-4729-9c81-9f830f9d1a281574931967842-Taavi-Men-Shirts-521574931964022-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Casual Shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12668448/2020/10/29/e48a1a7f-5c79-4c85-9d64-ee1fdc4f8d461603971822297-White-Floral-Printed-Cotton-Shirt-531603971820563-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Dress shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/1/17/d71045b2-4300-4395-b110-f652fa00e9e51579211471795-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--1st product shirt end-->
+            <br>
+            <br>
+            <!--2nd product shirt start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Flannel shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12637276/2020/10/12/2433907b-781a-480c-ac52-6880f31893ca1602502175637-United-Colors-of-Benetton-Men-Shirts-2881602502173146-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Granddad shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/7/28/f7b1aec7-46e1-47af-9ccc-3161b4fec9371595892045003-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Golf Shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11242112/2020/10/31/1c8fb7b6-006a-42f9-abbf-105e901934f11604148265333-Justice-League-Men-Shirts-5861604148263713-6.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Henley shirt </Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2290034/2019/3/15/bd60b48c-a631-4194-905b-7cb0ea928c161552651486797-HIGHLANDER-Men-Pink-Solid-Slim-Fit-Solid-Casual-Shirt-119155-5.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--2nd product shirt end-->
+            <br>
+            <!--3rd product shirt start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Tuxedo shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2127039/2018/2/7/11517989813264-HIGHLANDER-Men-Navy-Blue-Slim-Fit-Solid-Casual-Shirt-6311517989813070-3.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Caual Half Sleeve shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9295491/2019/5/24/1b6a5482-facd-4d97-adbc-f9793a2a983e1558692707196-Taavi-Men-Multicoloured-Block-Print-Legacy-Casual-Shirt-with-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Polo Shirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12149754/2020/8/17/fd0bd9cc-a621-4e27-82c2-f54017b246d01597669473208TheChennaiSilksClassicateBeigeBlackJuteCottonWovenDesignSare6.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Western shirt </Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7480758/2018/9/25/4d569588-67bc-4e9f-9e61-cf77ddd3f33b1537872982803-GAP-Men-Slim-Fit-Floral-Print-Western-Shirt-In-Denim-2601537872982652-2.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--3rd product shirt end-->
+
+            <div class="space"></div>
+            <h3 id="ttle4">Jacket</h3>
+            <br>
+            <!--1st product jacket start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Bomber Jackets</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12717774/2020/10/27/b1f331fd-8084-4d36-afc5-8cc74961f4451603798246820JeansBlackberrysMenJeansBlackberrysMenTrousersBlackberrysMen1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Biker Jacket</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12422042/2020/11/5/b8c37585-4465-4172-a906-b8896cffe4f01604558925325-WROGN-Men-Jackets-981604558922715-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Trucker Jacket</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10780712/2019/12/11/54361ae5-4c89-4717-a19e-90400cfd11f41576042873719-HERENOW-Men-Jackets-3311576042871161-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Track Jacket</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11953426/2020/11/11/24100d93-2057-48df-8ff0-fee89cedcdf91605092453538-HRX-by-Hrithik-Roshan-Men-Jackets-2351605092450943-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--1st product Jacket end-->
+            <br>
+            <br>
+            <!--2nd product jacket start-->
+            <div class="row">
+                <div class="col-md-3" id="it-jacket">
+                    <div class="product-items">
+                        <Span class="product-item-title">Hooded Jacket</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12717768/2020/10/27/91297526-1c28-4351-9a75-51f67a9fa68c1603798222858JeansBlackberrysMenJeansBlackberrysMenTrousersBlackberrysMen3.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Parka Jacket</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/6789193/2018/10/25/3c3ae9a5-b35f-4c98-a4f7-afa159b10c3c1540460130257-HERENOW-Men-Navy-Blue-Solid-Puffer-Jacket-3441540460130101-3.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Shearling Jacket</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/10/24/4e8b41ce-8433-4ba2-a517-96a4ae6ee7f41603491236618-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Anorak Jacket</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11618684/2020/5/27/86bfbe2e-1339-4da3-9385-90dcfb7b81f11590520204947BlueRoundNeckYarn-dyedKurtaTopsHERENOWWomenDressesHERENOWWom5.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--2nd product Jacket end-->
+            <br>
+            <br>
+            <!--2nd product jacket start-->
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Pea coat</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11885112/2020/5/28/2b414655-4c5f-4236-a15b-e34b06947fab1590645748523Carcoat1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$19.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Denim Jacket</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10617850/2019/11/20/a3bd1eae-f7f3-4b23-828a-69c87b164f461574220150594-Roadster-Men-Jackets-7751574220149261-5.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--2nd product Jacket end-->
+
+            <div class="space"></div>
+            <h3 id="ttle5">Sweater</h3>
+            <br>
+            <!--1st product sweater start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Crewneck Sweater</Span>
+
+                        <img class="product-item-image"
+                            src="https://www.thebrdwlk.com/wp-content/uploads/2020/06/J-Crew-Sweater.jpg" alt="Jeans"
+                            width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">V-Neck Sweater</Span>
+
+                        <img class="product-item-image"
+                            src="https://www.thebrdwlk.com/wp-content/uploads/2020/06/Comme-Des-Garcons-V-Neck-1024x1022.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Cardigan Sweater</Span>
+
+                        <img class="product-item-image"
+                            src="https://www.thebrdwlk.com/wp-content/uploads/2020/06/J.-Crew-Cardigan.jpg" alt="Jeans"
+                            width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Vest Sweater</Span>
+
+                        <img class="product-item-image"
+                            src="https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2019/12/Hadfield-Merino-Wool-Sweater-Vest-John-Smedley-gear-patrol.jpg?resize=768:*"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--1st product sweater end-->
+            <br>
+            <br>
+            <!--2nd product sweater start-->
+            <div class="row">
+                <div class="col-md-3" id="it-sweater">
+                    <div class="product-items">
+                        <Span class="product-item-title">Turtleneck Sweater</Span>
+
+                        <img class="product-item-image"
+                            src="https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2019/12/1988-Cotton-Rollneck-Sweater-JCrew-gear-patrol.jpg?resize=768:*"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Zip Sweater</Span>
+
+                        <img class="product-item-image"
+                            src="https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2019/12/Art-Deco-Full-Zip-Cardigan-Arpenteur-gear-patrol.jpg?resize=768:*"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Cable Knit Sweater</Span>
+
+                        <img class="product-item-image"
+                            src="https://www.thebrdwlk.com/wp-content/uploads/2020/06/Ralph-Lauren-Cable-Knit-Sweater.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Fair Isle Sweater</Span>
+
+                        <img class="product-item-image"
+                            src="https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2019/12/Wool-Fair-Isle-Turtleneck-Todd-Snyder-gear-patrol.jpg?resize=768:*"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--2nd product sweater end-->
+            <br>
+            <!--3rd product sweater start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">The Hoody</Span>
+
+                        <img class="product-item-image"
+                            src="https://i1.adis.ws/i/carhartt_wip/I028917_89_00-ST-01/hooded-carhartt-race-play-sw-black-35.png?$pdp_02$"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">The Sweatshirt</Span>
+
+                        <img class="product-item-image"
+                            src="https://www.thebrdwlk.com/wp-content/uploads/2020/06/Urban-Outfitter-Sweatshirt.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--3rd product sweater end-->
+
+            <div class="space"></div>
+            <h3 id="ttle6">Watch</h3>
+            <br>
+            <!--1st product watch start-->
+            <div class="row">
+                <div class="col-md-3" id="it-watch">
+                    <div class="product-items">
+                        <Span class="product-item-title">Analog Watch</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/6/9/e8443e83-7f90-4185-80f4-deb5f66368c11560020938885-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Digital Watch</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10069587/2019/6/17/c22f3e96-76c8-49c2-afee-05155836889c1560769752171-CASIO-Women-Watch-5201560769751284-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Automatic Watch</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/6152372/2018/5/17/77f3e300-3845-4615-a737-475b2072737f1526562021627-nA-991526562021589-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Chronograph Watch</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7264965/2018/9/1/dacc9ac5-89a8-4ed0-b211-1e617f110caa1535782392881-na-9071535782392757-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--1st product Watch end-->
+            <br>
+            <br>
+            <!--2nd product watch start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Dress Watch</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/10/6/72f7f1fb-05eb-4932-b111-00d927337d381601943278671-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Quartz Watch</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2466435/2020/2/27/0b8e7b6b-f912-4f82-9536-80544b9127631582784256862-Daniel-Klein-Women-Black-Analogue-Watch-DK11421-5-1721582784-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Pilot Watch</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/12/25/d785a08c-7c50-4872-a4a5-8beddb7a56b91577234484812-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Smart Watch</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12514750/2020/11/3/e5e217c0-5111-4860-b9d0-e24b6ba3404b1604378794318-Garmin-Fenix-6X-Pro-Solar-Sap-Tit-with-Black-Silicon-Band-32-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$20.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--2nd product Watch end-->
+
+            <div class="space"></div>
+            <h3 id="ttle7">Sunglass</h3>
+            <br>
+            <!--1st product Sunglass start-->
+            <div class="row">
+                <div class="col-md-3" id="it-sunglass">
+                    <div class="product-items">
+                        <Span class="product-item-title">Metal Sunglasses</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11818054/2020/4/29/afb05130-0996-4664-a201-4397aac7164c1588163461460ROYALSONblack1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Round Vintage Sunglasses</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/2/5/7c89ad06-aaed-42db-9d15-6f7c8d7897871580857575646-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">D-Frame Sunglasses</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8366655/2019/4/30/f6c13f8a-86d8-4420-8f17-d83e968c46831556609798788-HRX-by-Hrithik-Roshan-Unisex-Square-Sunglasses-7251556609798-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Oversized Aviators Sunglasses</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/3/3/e95d4465-855e-4503-8fc1-dc2b948805321583185312923-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--1st product sunglass end-->
+            <br>
+            <br>
+            <!--2nd product Sunglass start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Heavy Browline Sunglasses</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1911017/2017/6/13/11497343352174-Mast--Harbour-Unisex-Browline-Sunglasses-6511497343352051-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Square Wayfarer Sunglasses</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/9/28/45320c92-6f71-4418-a35a-f27db1bfd1311569671730012-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Flat-Brow Fashion Sunglasses</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7996159/2018/11/27/254dee76-e666-4ddc-b74c-e3ed20a210a11543300395104-Get-Glamr-Brown-7731543300394964-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Navigator Sunglasses</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11003928/2019/12/5/05b683c9-024c-4f23-9a1d-790e029e12d51575550299374-ROYAL-SON-Unisex-Aviator-Sunglasses-2281575550298738-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--2nd product sunglass end-->
+            <div class="space"></div>
+            <h3 id="ttle8">Shoe</h3>
+            <br>
+            <!--1st product Shoe start-->
+            <div class="row">
+                <div class="col-md-3" id="it-shoe">
+                    <div class="product-items">
+                        <Span class="product-item-title">VANS Shoe</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/8/18/a422535d-2981-4cf5-9485-9495f3b789ad1597735027134-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Adidas Continental Shoe</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11353560/2020/2/28/140cdbdc-a5e3-4e74-8dc6-a67042d3e1d31582867379920-ADIDAS-Originals-Men-Casual-Shoes-6151582867379246-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Asics Gel Saga Shoe</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/6992466/2018/11/22/3deb4246-da6d-40d7-9179-d09cf30a9f911542877425757-GELSAGA-3831542877425386-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Clarks Originals Desert Boot</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9849863/2019/6/6/a257f9fb-d305-423e-a726-8e9e3a32e0c31559822467848-Clarks-Men-Black-Solid-Leather-Mid-Top-Derbys-16715598224664-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--1st product shoe end-->
+            <br>
+            <br>
+            <!--2nd product shoe start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Nike Training Shoe</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8194165/2019/1/10/4193c889-7184-49a5-a413-3cc1cfd19af51547119887578-Nike-Men-Black-Flex-Control-3-Training-Shoes-206154711988668-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$12.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title">Koio Capri Triple Shoe</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1813297/2017/4/13/11492076184464-Keds-Women-White-Triple-Solid-Regular-Sneakers-1061492076184219-1.jpg"
+                            alt=" Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$16.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title"> Oxford Shoe</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1221307/2016/2/16/11455606721737-Sir-Corbett-Men-Formal-Shoes-5281455606721282-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Pablo Canvas Espadrilles Shoe</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11506330/2020/3/19/c341b619-3aae-4292-a3f7-60fece2bab7e1584618488847-WROGN-Men-Casual-Shoes-1161584618487443-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+            </div>
+            <!--2nd product shoe end-->
+            <br>
+            <br>
+            <!--3rd product shoe start-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-items">
+                        <Span class="product-item-title"> Sneakers Shoe</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11110192/2020/10/16/c9b25261-4cef-48da-a921-6b573b5f7c431602854371827-Roadster-Men-Casual-Shoes-3031602854370314-1.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$14.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <div class="new-container-2">
+                            <a href="details.html" style="text-decoration:none;color:white;"><button
+                                    class=" product-detail-button">Details</button></a>
+                            <span class="new"><i>New</i></span>
+                        </div>
+                        <!--new container end-->
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="product-items">
+                        <Span class="product-item-title">Loafer Shoe</Span>
+
+                        <img class="product-item-image"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/2/28/eb25b1f6-d651-42b7-bb17-4c14866c369e1582840122694-4.jpg"
+                            alt="Jeans" width="100%" height="100%">
+                        <div class="product-item-details">
+                            <span class="product-item-price">$15.99</span>
+                            <button class=" product-item-button"><i class='fa fa-cart-plus'
+                                    style='font-size:24px;color:rgb(247, 247, 247);'></i></button>
+                        </div>
+                        <a href="details.html" style="text-decoration:none;color:white;"><button
+                                class=" product-detail-button">Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--3rd product shoe end-->
+            <br>
+        </div>
+    </section>
+    <!--product Section end-->
+    <div class="space"></div>
+    <section class="social-shop">
+        <h1>Shop Instagram</h1>
+        <p>Who did it better? Tag us on insta <span>@Shopper + we will feature all the best pics</span></p>
+        <div class="title-space"></div>
+        <div class="social-trailer">
+
+            <div class="so-trailer-container">
+                <img src="https://image.freepik.com/free-photo/fashionable-man-winter-knitted-clothes-with-laptop_158595-4114.jpg"
+                    alt="product-trailer1" width="100%" height="auto" class='so-image'>
+                <div class="so-trailer-content">
+                    <div>
+                        <span><a href="#" class="fa fa-instagram"></a></span>
+                        <p><a href="#" class='social-shop'>Shop The Look</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="so-trailer-container">
+                <img src="https://image.freepik.com/free-psd/front-view-stylish-man-hoodie-with-headphones_23-2148939682.jpg"
+                    alt="product-trailer1" width="100%" height="auto" class='so-image'>
+                <div class="so-trailer-content">
+                    <div>
+                        <span><a href="#" class="fa fa-instagram"></a></span>
+                        <p><a href="#" class='social-shop'>Shop The Look</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="so-trailer-container">
+                <img src="https://image.freepik.com/free-photo/shocked-speechless-man-points-shows-blank-space_273609-40655.jpg"
+                    alt="product-trailer1" width="100%" height="auto" class='so-image'>
+                <div class="so-trailer-content">
+                    <div>
+                        <span><a href="#" class="fa fa-instagram"></a></span>
+                        <p><a href="#" class='social-shop'>Shop The Look</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="so-trailer-container">
+                <img src="https://image.freepik.com/free-photo/handsome-man-pointing-up_1368-5104.jpg"
+                    alt="product-trailer1" width="100%" height="auto" class='so-image'>
+                <div class="so-trailer-content">
+                    <div>
+                        <span><a href="#" class="fa fa-instagram"></a></span>
+                        <p><a href="#" class='social-shop'>Shop The Look</a></p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="so-trailer-container">
+                <img src="https://image.freepik.com/free-photo/pensive-bearded-man-holds-chin-focused-considers-something-makes-decision-wears-summer-outfit-pink-sunglasses-isolated-blue-wall_273609-53170.jpg"
+                    alt="product-trailer1" width="100%" height="auto" class='so-image'>
+                <div class="so-trailer-content">
+                    <div>
+                        <span><a href="#" class="fa fa-instagram"></a></span>
+                        <p><a href="#" class='social-shop'>Shop The Look</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="space"></div>
+    <section>
+        <div style="text-align: center;">
+            <i class="fa fa-cc-amex" style="font-size:46px;color:#007bc1;"></i>
+            <i class="fa fa-cc-paypal" style="font-size:46px;color:#253b80;"></i>
+            <i class="fa fa-cc-mastercard" style="font-size:46px;color:#0a3a82;"></i>
+            <i class="fa fa-cc-visa" style="font-size:46px;color:#0157a2;"></i>
+        </div>
+        <br>
+        <div class=" social-link">
+            <br>
+
+            <div class="container ioc">
+
+                <ul class="so-icon">
+                    <li class="so-icon-item"><a href="#"><i class="fa fa-facebook-square"
+                                style="font-size:36px;color:#3B5998;"></i></a></li>
+                    <li class="so-icon-item"><a href="#"><i class='fa fa-twitter-square'
+                                style='font-size:36px;color:#55ACEE;'></i></a></li>
+                    <li class="so-icon-item"><a href="#"><i class='fa fa-instagram'
+                                style='font-size:36px;color:red'></i></a></li>
+                    <li class="so-icon-item"><a href="#"><i class='fa fa-pinterest-square'
+                                style='font-size:36px;color:#cb2027;'></i></a></li>
+                    <li class="so-icon-item"><a href="#"><i class='fa fa-reddit-square'
+                                style='font-size:36px;color:#ff5700;'></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="foter">
+        <br>
+
+        <div class="container" id="page-end">
+            <div class="topper">
+                <h5 class="h-menu"><a href="index.html" id="t-op"><i class='fa fa-angle-double-left'
+                            style='font-size:20px'></i> Back To Home</a></h5>
+                <h5 class="h-menu"><a href="#it-cart" id="t-op"><i class='fa fa-angle-double-up'
+                            style='font-size:20px'></i> Top</a></h5>
+            </div>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h6 style='color:rgba(179, 172, 172, 0.76);'>INFORMATION</h6>
+                    <p><a href="index.html" class="fo-link" style="text-decoration: none;">Home</a></p>
+                    <p><a href="about.html" class="fo-link" style="text-decoration: none;" id="show-about">About Us</a>
+                    </p>
+                    <p><a href="team.html" class="fo-link" style="text-decoration: none;" id="show-team">Team</a></p>
+                    <p><a href="contact.html" class="fo-link" style="text-decoration: none;" id="show-contact">Contact
+                            us</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h6 style='color:rgba(179, 172, 172, 0.76);'>CUSTOMER SERVICE</h6>
+                    <p><a href="about.html" class="fo-link" style="text-decoration: none;" id="cos-ser1">Security Policy
+                        </a></p>
+                    <p><a href="about.html" class="fo-link" style="text-decoration: none;" id="cos-ser2">Orders, Stock
+                            Availability & Pricing</a></p>
+                    <p><a href="about.html" class="fo-link" style="text-decoration: none;" id="cos-ser3">Shipping &
+                            Replacement</a></p>
+                    <p><a href="about.html" class="fo-link" style="text-decoration: none;" id="cos-ser4">Privacy
+                            Policy</a></p>
+                    <p><a href="about.html" class="fo-link" style="text-decoration: none;" id="cos-ser5">Terms of
+                            Use</a></p>
+
+                </div>
+                <div class="col-md-3">
+                    <h6 style='color:rgba(179, 172, 172, 0.76);'>MY ACCOUNT</h6>
+                    <p><a href="#" class="fo-link" style="text-decoration: none;">Customer info</a></p>
+                    <p><a href="#it-cart" class="fo-link" style="text-decoration: none;">Cart</a></p>
+
+                </div>
+                <div class="col-md-3">
+                    <h6 style='color:rgba(179, 172, 172, 0.76);'>CONTACT US</h6>
+                    <p><i class='fa fa-map-marker-alt' style='color:rgb(245, 102, 102);'></i> 2no gate, Sholoshor, Near
+                        Jame Masjid, Chottogram</p>
+                    <p><i class='fa fa-mail-bulk' style='color:rgb(245, 102, 102);'></i> support.shoppy123@gmail.com
+                    </p>
+                    <p><i class='fa fa-phone-alt' style='color:rgb(245, 102, 102);'></i> 09636112131</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <p style="color:rgba(179, 172, 172, 0.397);">Copyright © 2020 Shoppy.com. </p>
+                </div>
+                <div class="col-sm-6">
+                    <p style="color:rgba(179, 172, 172, 0.397);text-align: right;">All rights reserved.Powered by
+                        nopCommerce. Developed by nopStation</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="item-product.js" async></script>
+
+
+</body>
+
+</html>
